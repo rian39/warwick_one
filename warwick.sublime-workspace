@@ -135,13 +135,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "warwick.rmd",
+			"settings":
+			{
+				"buffer_size": 1749,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.sh",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Unix",
+				"name": "#!/bin/sh"
+			}
+		},
+		{
+			"file": "template.latex",
+			"settings":
+			{
+				"buffer_size": 10736,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/R Tools/R.sublime-build",
 	"command_palette":
 	{
-		"height": 201.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"set la",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"set mak",
+				"Set Syntax: Markdown"
+			],
 			[
 				"set lat",
 				"Set Syntax: LaTeX"
@@ -153,10 +186,6 @@
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"set la",
-				"Set Syntax: LaTeX"
 			],
 			[
 				"git",
@@ -486,8 +515,89 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "warwick.rmd",
+					"settings":
+					{
+						"buffer_size": 1749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1703,
+								1703
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 830.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "build.sh",
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#!/bin/sh",
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "template.latex",
+					"settings":
+					{
+						"buffer_size": 10736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 22.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
