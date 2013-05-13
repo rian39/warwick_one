@@ -515,7 +515,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -530,8 +530,8 @@
 						"selection":
 						[
 							[
-								1703,
-								1703
+								940,
+								940
 							]
 						],
 						"settings":
@@ -539,7 +539,7 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 830.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
