@@ -139,7 +139,23 @@
 			"file": "warwick.rmd",
 			"settings":
 			{
-				"buffer_size": 1749,
+				"buffer_size": 12543,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mackenza/.config/sublime-text-2/Packages/User/machine_learning.sublime-snippet",
+			"settings":
+			{
+				"buffer_size": 276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mackenza/Documents/data_intensive/lse_cambridge_markets_algorithms/markets_algorithms.Rmd",
+			"settings":
+			{
+				"buffer_size": 11982,
 				"line_ending": "Unix"
 			}
 		},
@@ -147,7 +163,7 @@
 			"file": "build.sh",
 			"settings":
 			{
-				"buffer_size": 169,
+				"buffer_size": 184,
 				"line_ending": "Unix",
 				"name": "#!/bin/sh"
 			}
@@ -156,7 +172,15 @@
 			"file": "template.latex",
 			"settings":
 			{
-				"buffer_size": 10736,
+				"buffer_size": 3370,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "references/refs.bib",
+			"settings":
+			{
+				"buffer_size": 2105,
 				"line_ending": "Unix"
 			}
 		}
@@ -167,6 +191,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"set am",
+				"Set Syntax: Markdown"
+			],
 			[
 				"set la",
 				"Set Syntax: LaTeX"
@@ -289,6 +317,10 @@
 	},
 	"file_history":
 	[
+		"/home/mackenza/Documents/data_intensive/warwick.rmd",
+		"/home/mackenza/Documents/data_intensive/warwick_june2013/warwick.md",
+		"/home/mackenza/Documents/data_intensive/warwick_june2013/knit_all.sh",
+		"/media/0031-014A/Documents/data_intensive/warwick_june2013/warwick.rmd",
 		"/home/mackenza/Documents/data_intensive/book/proposal2.mdown",
 		"/home/mackenza/Documents/data_intensive/number_supply/template.latex",
 		"/home/mackenza/R/github/ipython_edit_ZqD3Kx.py",
@@ -523,20 +555,48 @@
 					"file": "warwick.rmd",
 					"settings":
 					{
-						"buffer_size": 1749,
+						"buffer_size": 12543,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								940,
-								940
+								6384,
+								6384
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/mackenza/.config/sublime-text-2/Packages/User/machine_learning.sublime-snippet",
+					"settings":
+					{
+						"buffer_size": 276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"default_extension": "sublime-snippet",
+							"syntax": "Packages/XML/XML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -545,19 +605,46 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "build.sh",
+					"buffer": 2,
+					"file": "/home/mackenza/Documents/data_intensive/lse_cambridge_markets_algorithms/markets_algorithms.Rmd",
 					"settings":
 					{
-						"buffer_size": 169,
+						"buffer_size": 11982,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								169,
-								169
+								1631,
+								1631
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 738.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "build.sh",
+					"settings":
+					{
+						"buffer_size": 184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
 							]
 						],
 						"settings":
@@ -573,19 +660,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "template.latex",
 					"settings":
 					{
-						"buffer_size": 10736,
+						"buffer_size": 3370,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								27,
-								27
+								335,
+								335
 							]
 						],
 						"settings":
@@ -593,7 +680,33 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 22.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "references/refs.bib",
+					"settings":
+					{
+						"buffer_size": 2105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								385,
+								385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
