@@ -139,15 +139,15 @@
 			"file": "warwick.rmd",
 			"settings":
 			{
-				"buffer_size": 12881,
+				"buffer_size": 15291,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/mackenza/.config/sublime-text-2/Packages/User/machine_learning.sublime-snippet",
+			"file": "/home/mackenza/R/kittydar/kittydar/README.md",
 			"settings":
 			{
-				"buffer_size": 276,
+				"buffer_size": 2620,
 				"line_ending": "Unix"
 			}
 		},
@@ -180,7 +180,15 @@
 			"file": "references/refs.bib",
 			"settings":
 			{
-				"buffer_size": 2105,
+				"buffer_size": 2384,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "references/Exported Items.bib",
+			"settings":
+			{
+				"buffer_size": 277,
 				"line_ending": "Unix"
 			}
 		}
@@ -317,6 +325,14 @@
 	},
 	"file_history":
 	[
+		"/home/mackenza/bank.txt",
+		"/home/mackenza/R/kittydar/kittydar/browser.js",
+		"/home/mackenza/R/kittydar/kittydar/README.md",
+		"/home/mackenza/R/kittydar/kittydar/training/README.md",
+		"/home/mackenza/R/kittydar/kittydar/kittydar.js",
+		"/home/mackenza/R/kittydar/kittydar/utils.js",
+		"/home/mackenza/R/kittydar/kittydar/nms.js",
+		"/home/mackenza/.config/sublime-text-2/Packages/User/machine_learning.sublime-snippet",
 		"/home/mackenza/Documents/data_intensive/warwick.rmd",
 		"/home/mackenza/Documents/data_intensive/warwick_june2013/warwick.md",
 		"/home/mackenza/Documents/data_intensive/warwick_june2013/knit_all.sh",
@@ -441,6 +457,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"pa",
+			"paris",
 			"technique_demos",
 			"robot",
 			"whitehead_modes_1958",
@@ -547,7 +565,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -555,15 +573,15 @@
 					"file": "warwick.rmd",
 					"settings":
 					{
-						"buffer_size": 12881,
+						"buffer_size": 15291,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12878,
-								12878
+								13394,
+								13394
 							]
 						],
 						"settings":
@@ -572,31 +590,30 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 338.0,
+						"translation.y": 5276.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/home/mackenza/.config/sublime-text-2/Packages/User/machine_learning.sublime-snippet",
+					"file": "/home/mackenza/R/kittydar/kittydar/README.md",
 					"settings":
 					{
-						"buffer_size": 276,
+						"buffer_size": 2620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								136,
-								136
+								98,
+								98
 							]
 						],
 						"settings":
 						{
-							"default_extension": "sublime-snippet",
-							"syntax": "Packages/XML/XML.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -616,8 +633,8 @@
 						"selection":
 						[
 							[
-								1631,
-								1631
+								10413,
+								10413
 							]
 						],
 						"settings":
@@ -626,7 +643,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 738.0,
+						"translation.y": 1433.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -692,15 +709,42 @@
 					"file": "references/refs.bib",
 					"settings":
 					{
-						"buffer_size": 2105,
+						"buffer_size": 2384,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								385,
-								385
+								2114,
+								2114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 387.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "references/Exported Items.bib",
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
 							]
 						],
 						"settings":
@@ -779,7 +823,7 @@
 		[
 			[
 				"",
-				"/home/mackenza/Documents/data_intensive/number_workshop_goldsmiths_feb2012/number_supply.sublime-project"
+				"/home/mackenza/Documents/google_analytics_spet2012/google.sublime-project"
 			]
 		],
 		"width": 380.0
