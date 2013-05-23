@@ -8,22 +8,28 @@ a.mackenzie@lancaster.ac.uk
 
 ## Abstract
 
-This paper explores  ways of thinking about digital data that lie somewhere between blithe faith and critical dismissal. It focuses on the machine learning, an increasingly prevalent bundle of techniques and approaches that lies at the centre of contemporary data processing. Machine learning is used to program computers to find patterns, associations, and correlations, to classify events and make predictions on a large scale. As a set of techniques for classifying and predicting, machine learning lies close to centre of calculation in social network media, finance markets, robotics, and contemporary sciences such as genomics and epidemiology. This paper will discuss who is doing machine learning, who could do machine learning, and how they might do it differently. 
+This paper explores  ways of thinking about digital data that lie somewhere between blithe faith and critical dismissal. It focuses on the machine learning, an increasingly widespread bundle of techniques and approaches that lies at the centre of contemporary data processing. Machine learning is used to program computers to find patterns, associations, and correlations, to classify events and make predictions on a large scale. As a set of techniques for classifying and predicting, machine learning lies close to centre of calculation in social network media, finance markets, robotics, and contemporary sciences such as genomics and epidemiology. This paper will discuss who is doing machine learning, who could do machine learning, and how they might do it differently. 
 
 ## The problem
 
 - if you had all the data, what then? 
 	- this is the horizon of the contemporary lifeworld. Someone, perhaps not us, not yet, has all the data. Probably they are a business like Walmart, amazon, google or Facebook. They might be a State, like the United States or the United Kingdom. Perhaps we will have the data. There is, after all, a lot of data already available, and more all the time. It may be that civil society, non-governmental groups like Wikileaks, or various forms of massive data leak will render valuable data available. Or maybe just the increasingly powerful techniques of record linkage will allow comprehensive data streams to appear.   
-	- if we had it, what would we do?
-- pattern finding vs models?
-	- Abbott - inaccurate opposition between linear and pattern
-- finding the function that generated the data
+	- if we had it, what would we do? pattern finding vs models?
+		- the problem is that at the moment we have no good ways of thinking about what you might do, or ways of articulating optimism about data with understandings of what it might cost to have the data. There are many different facets to this problem. Here I focus on a more academic side of the problem.  
+		- Andrew Abbott, whose work has received much more attention in the wake of [@savage_contemporary_2009], argued over that a decade ago -- I don't know whether he is still arguing it --  that we should adopt pattern-based approaches to working with data:
+	
+			> If most things that could happen don’t happen, then we are far better  off trying first to find local patterns in data and only then looking for regularities among those patterns. Indeed, it is for this reason that cluster analysis and scaling, not regression, dominate big-money social science — market research — where the aim is to find, understand, and exploit strong local patterns.  For these are methods that seek clumps and partitions of data and make not attempt to write general transformations [@abbott_time_2001, 241]
 
-## The data
+		- There are two problems with Abbott's recommendation. The first is an empirical one: 'big money social science' such as business analytics intimately and increases uses linear regression models. In the meantime, however, the practices of linear modelling have been heavily renovated, and proliferated in a number of different directions. There is really no dispute on this point, and hence the whole opposition that Abbott sets up between pattern-based approaches and linear model or regression-based approaches to data is not empirically well-grounded. 
+		- The second observation flows from this. The largely North American social sciences that Abbott criticises for their linear modelling of social data may or may not continue in their practices (augmented by social network analysis and heavy dosed of Bayesian statistics). The broader point here is that the simple opposition between pattern or cluster-based approaches and linear models of reality does not sufficiently to my mind orient us to the shifts in data practice that have been happening in the last decade or so. We need other analytic filters. 
+
+
+## Learning from data
 
 ### if you had all the data, what then?
 
-I want to present several vignettes that illustrate what people do when they have all the data. They nearly always do what is variously called data mining, knowledge discovery or currently, _machine learning_ 
+I want to present several vignettes that illustrate what people do when they have all the data. They nearly always do what is variously called data mining, knowledge discovery or currently, _machine learning_. These terms reflect different scientific, govermental and commercial interests in data. Formally, they are linked by the idea that they are *finding an approximation to the function that generated the data.* Nearly all of the models and techniques used, whether it is clustering, linear modelling, neural networks, support vector machines, random forests, topic modelling, etc., etc., can be seen as attempts to find the function that generated the data.
+
 
 #### infrastructural re-dimensioning
 
@@ -148,39 +154,72 @@ I want to present several vignettes that illustrate what people do when they hav
 
 - signals -- image and sound
 	- driverless car - Thrum - winner of the Darpa challenge
-	- google cat
+	- kittydar: : [kittydar](https://github.com/harthur/kittydar) vs. google cat
 	- Eulerian video
 
-## The people
+#### machine learning as interdisciplinary method
 
- - I haven't yet talked about machine learning actually seeks structure in data, but I keep talking about people, companies and scientists doing machine learning without saying much about who they are. Who does machine learning? 
+A couple of observations about these vignettes:
 
-- the field lies somewhere between computer science and statistics. For instance, one of the main textbooks in the field [@hastie_elements_2009], written by three very well-known statisticians from Stanford University. On the other hand, the Stanford computer scientist Andrew Ng is one of the most well-known figures in the field. His Youtube lectures on machine learning CS229, a postgraduate course, show viewing figures peaking at 500,000. 
+- machine learning move widely across disciplines. In some ways that is not suprising because statistical technqiues had already moved widely across natural sciences, social sciences and into  various practices. There may be, however, a kind of hypermobility associated with machine learning that is partly due to infrastructural -re-dimensioning, and the associated shifting dimensionality  of data.
+- what is this hypermobility? I said above that machine learning tries to find the function that generated the data. Another way of viewing this is to see machine learning as a way of navigating high-dimensional spaces, spaces that are difficult for us to perceive, observe or represent. Many machine learning techniques try to address the fluxing dimensionality of patterns. We can see patterns easily when they are on surfaces, but hyperplanes or hypersurfaces can have patterns that we simply can't see, although we might be able to have some feeling of them. These spaces, generated by functions, are explored in machine learning, usually by finding lines or planes that cut through them, linking somethings together and separating others [^parisi].
 
-- So the quintessential machine learning expert is a Stanford PhD, who goes on to work in Silicon Valley, Wall Street or for some US government agency. 
-	- Ng: stanford Phds
-	- programming collective intelligence
+[^parisi]: This is the key intuition developed by Luciana Parisi in her recent work [@parisi_contagious_2013]. Her promotion of algorithms as objects of abstract experience is consonant with my argument here. I differ from her in the importance I attribute to algorithmic information theory and its notion of randomness. She sees algorithmic processes as ruptured by non-computable bursts of randomness generated by the axiomatic undecibility (cf. [@Mackenzie, 1997] on undecibility and non-computable numbers). Importantly, I differ in the cases I draw on and how I link practice and theory.
 
-- the wonderful people
-	- Hilary Mason
-	- Cath O'Neill & Rachel whats her name
-	- Heather Arthur
+- Thirdly, if fluxing data dimensionality becomes navigable through machine learning, it becomes important to ask the usual kinds of science studies questions such as navigable or explorable at what cost. 
+
+##  The fluxing dimensionality of people
+
+ - So while I haven't yet talked about machine learning actually locates structure in data, I want to now turn to talking about people, companies and scientists doing machine learning. Who today does machine learning and at what cost? 
+
+- Academically, the epicentre of the field lies somewhere between computer science and statistics. For instance, one of the main textbooks in the field [@hastie_elements_2009], was written by three very well-known statisticians from Stanford University. On the other hand, the Stanford computer scientist Andrew Ng is one of the most well-known figures in the field. His Youtube lectures on machine learning CS229, a postgraduate course, show viewing figures peaking at 500,000.
+- SHOW [Andrew Ng, Stanford, CS229](http://www.youtube.com/watch?v=ey2PE5xi9-A) 
+
+- The tenor of these lectures is that understanding machine learning as a mathematically grounded process of finding the function that best approximates how the data was generated offers to do things that programmers and others can't do. Ng's refers often to the Silicon Valley companies he visits, and how often they are wasting their time trying to build systems that are statistically unreliable. He adjures his students to understand the mathematical and statistical underpinnings of machine learning so that when they graduate they will be to respond to the challenges of constructing and predicting increasingly complex processes. From the perspective of Stanford or MIT,  the quintessential machine learning expert is a PhD, highly-maths literate and also able to program, who goes on to work in Silicon Valley, Wall Street or for some US government agency. 
+- This does not exhaust the constituency of machine learning practitioners. Beginning around 2006, machine learning methods started appearing more broadly in software cultures. For instance, the book _Programming Collective Intelligence_ appeared in 2007 and quickly became popular as a way of thinking about how to reconfigure website and other network media platforms to deal with the greatly increased range of interactions. A series of software packages, instructional media, and events have ensued that promote machine learning technique as the way to manage, contain and optimise the flows of data not only in digital media, but in the sciences. 
+- More recently, the recourse to machine learning has become more explicit. Recent books such as _Machine Learning for Hackers_, written by two social science U.S. PhD students, are symptomatic.  Many of the datascience organisations as well as hackers individually show increasing interest in machine learning as a way to program software to react in ways that cannot be anticipated in advance by programmers themselves. 
+- Yet the people who do machine learning are not the same as the typical programmer or hacker. Indeed machine learning seems to coincide with a shift not only in how data is handled, but in the ways in which data-driven systems are constructed and configured. 
+- Several vignettes outline this shift:
+	- [Hilary Mason at Bacon](http://www.hilarymason.com/presentations-2/devs-love-bacon-everything-you-need-to-know-about-machine-learning-in-30-minutes-or-less/) 
+		- [SHOW conference video]: Mason talks about the wonderful who lie someone between engineering, programming, mathematics and social science.
+	- the second is the growth of data science courses that machine learning methods to the new coding classes. These courses are run at universities, industry conferences, hackathons and various online settings by statisticians as well as more conventional software industry trainers. For instance, the 'first' datascience course was  run  by by Rachel Schutt (formerly at Google) in late 2012 at Columbia University in New York. It attracted students from various departments and disciplines, and will appear as a book later this year. Not all of this course is machine learning, but substantial portions are. 
+		- SHOW [Cath O'Neill & Rachel Schutt from Johnson Research Labs](http://columbiadatascience.com/blog/)
+	- Heather Arthur, the software developer I showed speaking earlier makes two claims that are relevant here. [Heather Arthur on cat face detection](http://www.youtube.com/watch?v=uZqXc1E91mE&feature=youtu.be) [SHOW ] 
+		- 'essentially machine learning algorithms are better programmers than you ' (00:03:35)
+		- 'what is cool is that this is all running on the client side. 'A few years ago this would not have been possible' (00:17:30); 
+		- Programmer's become better programmers via machine learning; at the same time, code in all settings becomes more powerful; 'all this is running on the client side' means that the machine learning algorithms (in the case of Kittydar, neural network algorithms) are much more widely distributed. They are not staying just in  the server farms, the data centres such as Google Compute. Machine learning gets into 'the clients.' 
+	- We could also look at cases such as the Obama re-election data team
+	- 
 
 - the social scientists
 	- Gary King
-	- machine learning for hackers
 	- manovich -- cultural analytics
 	- Savage - descriptive assemblage
 
 ## What to do
 
-- Machine learning is a hard field to get into in some ways. On the one hand, it is becoming enormously available and increasingly as Thrift would say, part of the contemporary time-space signature. Myriad mundane examples could be given. On the other hand, to get into it, to occupy the fluxing dimensionality of the data is  technically difficult, and conceptually challenging. It takes very significant investments in time and attention (for instance, going through 27 hours of Youtube lectures with lots of equations written on blackboards is not trivial). 
-
-- I am suggesting that getting into it analytically and practically might be worthwhile, at least for some people for several reasons
-	- its ubiquity in science, business and government renders it a key contemporary control practice, that differs in powerful yet subtle ways from existing ways of knowing, predicting, anticipating or controlling
+-  Three observations then about the significance of machine learning:
+	-  its ubiquity in science, business and government renders it a key contemporary control practice, that differs in powerful yet subtle ways from existing ways of knowing, predicting, anticipating or controlling
 	- its mobility as a cluster of methods has strongly performative effects -- parts of the world are heavily re-configured through it
 	- the mobility of its methods has no clear boundaries. The spread of machine learning into social sciences and humanities has started. And much of our research already depends on it anyway (google search, etc). The question is how we move in relation to machine learning. 
-	- like all sciences and technologies, machine learning contains zones of slippage, inconsistency or friction where things can happen. While it might not be us who occupy those zones most easily, in making sense of machine learning all the way down, and pointing to the structures, processes or relations at play, we help free up the possibilities of gaming the models.
+
+- Machine learning is a hard field to get into in some ways for social science and humanities researchers. There are lots of statistical, mathematical and infrastructural subleties to deal with. On the one hand, it is becoming enormously available and increasingly as Thrift would say, part of the contemporary time-space signature. Myriad mundane examples could be given. On the other hand, to get into it, to occupy the fluxing dimensionality of the data is  technically difficult, and conceptually challenging. It takes very significant investments in time and attention (for instance, going through 27 hours of Youtube lectures with lots of equations written on blackboards is not trivial). 
+
+- I am suggesting that getting into it analytically and practically by whatever might be worthwhile, at least for some people for several reasons:
+	1. It offers  a way of accompanying the fluxing dimensionality of data. In _Modes of Thought_, Alfred North Whitehead writes:
+
+		>Perhaps our knowledge is distorted unless we can comprehend its essential connection with happenings which involve spatial relationships of fifteen dimensions [@whitehead_modes_1958, 78]
+		
+		In this passage, Whitehead's choice of 15 is arbitrary. I guess it just refers to a spatiality that it is hard for to imagine, even though we no doubt inhabit it from time. From the standpoint of machine learning, we often do move through high dimensional spaces. Many machine learning techniques seek to reduce the dimensionality of spatial relationships in data. These would include the many dimensional reduction strategies. But others seek to expand the dimensionality of data. And the feild as a whole tends to augment rather than diminish data dimensionality. Certain techniques artificially inject infinite dimensional spaces into the models in order to find hyperplanes that separate data. 
+	
+	2. Like all sciences and technologies, machine learning must contain zones of slippage, inconsistency or friction where things can happen. While it might not be us as researchers who occupy or can identify those zones most easily, in making sense of machine learning all the way down, and pointing to the structures, processes or relations at play, we help free up the possibilities of gaming the models. And actually, who else is going to do it? That is, machine learning provides a way to contest the asymmetrical distributions of agency admidst re-dimensioned infrastructures.  
+	3. To some extent, as researchers we are encountering a version of the quandary I posed at the outset: what happens if you have all the data? The question is how we are going to comprehend 15D happenings, especially when a good number of those dimensions are occluded from us.  A couple of scenarios occur to me here:
+
+		- using machine learning to impute what kind of machine learning is going on in a given setting
+		- using machine learning techniques as a way of thinking about differences, movement, shape and change
+	4. 
+	
+
 
 - Jaron Lanier
 - occupydata

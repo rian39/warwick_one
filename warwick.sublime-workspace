@@ -139,7 +139,15 @@
 			"file": "warwick.rmd",
 			"settings":
 			{
-				"buffer_size": 15291,
+				"buffer_size": 21556,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mackenza/Documents/notes/WhiteheadModes.mdown",
+			"settings":
+			{
+				"buffer_size": 2618,
 				"line_ending": "Unix"
 			}
 		},
@@ -148,6 +156,14 @@
 			"settings":
 			{
 				"buffer_size": 2620,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mackenza/Documents/notes/abbott_time_matters.md.txt",
+			"settings":
+			{
+				"buffer_size": 3346,
 				"line_ending": "Unix"
 			}
 		},
@@ -180,15 +196,7 @@
 			"file": "references/refs.bib",
 			"settings":
 			{
-				"buffer_size": 2384,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "references/Exported Items.bib",
-			"settings":
-			{
-				"buffer_size": 277,
+				"buffer_size": 4439,
 				"line_ending": "Unix"
 			}
 		}
@@ -199,6 +207,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"set ",
+				"Set Syntax: Markdown"
+			],
 			[
 				"set am",
 				"Set Syntax: Markdown"
@@ -325,6 +337,10 @@
 	},
 	"file_history":
 	[
+		"/home/mackenza/Documents/data_intensive/warwick_june2013/references/Exported Items.bib",
+		"/home/mackenza/Documents/notes/abbott_time_matters.rtf",
+		"/home/mackenza/Documents/notes/abbott_time_matters.md",
+		"/home/mackenza/Documents/data_intensive/book/proposal.rmd",
 		"/home/mackenza/bank.txt",
 		"/home/mackenza/R/kittydar/kittydar/browser.js",
 		"/home/mackenza/R/kittydar/kittydar/README.md",
@@ -454,9 +470,11 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"savage_contemporary_2009",
+			"abbott",
 			"pa",
 			"paris",
 			"technique_demos",
@@ -565,7 +583,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -573,15 +591,15 @@
 					"file": "warwick.rmd",
 					"settings":
 					{
-						"buffer_size": 15291,
+						"buffer_size": 21556,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13394,
-								13394
+								20850,
+								20850
 							]
 						],
 						"settings":
@@ -590,13 +608,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5276.0,
+						"translation.y": 5843.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "/home/mackenza/Documents/notes/WhiteheadModes.mdown",
+					"settings":
+					{
+						"buffer_size": 2618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1398,
+								1398
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 194.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "/home/mackenza/R/kittydar/kittydar/README.md",
 					"settings":
 					{
@@ -622,7 +666,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
+					"file": "/home/mackenza/Documents/notes/abbott_time_matters.md.txt",
+					"settings":
+					{
+						"buffer_size": 3346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2009,
+								2009
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 173.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "/home/mackenza/Documents/data_intensive/lse_cambridge_markets_algorithms/markets_algorithms.Rmd",
 					"settings":
 					{
@@ -633,8 +703,8 @@
 						"selection":
 						[
 							[
-								10413,
-								10413
+								1520,
+								1520
 							]
 						],
 						"settings":
@@ -643,13 +713,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1433.0,
+						"translation.y": 803.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "build.sh",
 					"settings":
 					{
@@ -677,7 +747,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "template.latex",
 					"settings":
 					{
@@ -705,19 +775,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "references/refs.bib",
 					"settings":
 					{
-						"buffer_size": 2384,
+						"buffer_size": 4439,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2114,
-								2114
+								3952,
+								3952
 							]
 						],
 						"settings":
@@ -726,33 +796,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 387.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "references/Exported Items.bib",
-					"settings":
-					{
-						"buffer_size": 277,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								277,
-								277
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/Bibtex.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1269.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -831,7 +875,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 338.0,
 	"status_bar_visible": true
 }
