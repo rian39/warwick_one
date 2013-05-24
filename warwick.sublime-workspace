@@ -139,7 +139,7 @@
 			"file": "warwick.rmd",
 			"settings":
 			{
-				"buffer_size": 21556,
+				"buffer_size": 28027,
 				"line_ending": "Unix"
 			}
 		},
@@ -196,7 +196,7 @@
 			"file": "references/refs.bib",
 			"settings":
 			{
-				"buffer_size": 4439,
+				"buffer_size": 4826,
 				"line_ending": "Unix"
 			}
 		}
@@ -207,6 +207,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"set R",
+				"Set Syntax: R"
+			],
 			[
 				"set ",
 				"Set Syntax: Markdown"
@@ -338,6 +342,10 @@
 	"file_history":
 	[
 		"/home/mackenza/Documents/data_intensive/warwick_june2013/references/Exported Items.bib",
+		"/home/mackenza/R/animations/grad_desc.R",
+		"/home/mackenza/R/kittydar/classifiers/mixed-svm-1000.json",
+		"/home/mackenza/.config/ipython/README",
+		"/home/mackenza/.config/ipython/profile_abm/ipython_notebook_config.py",
 		"/home/mackenza/Documents/notes/abbott_time_matters.rtf",
 		"/home/mackenza/Documents/notes/abbott_time_matters.md",
 		"/home/mackenza/Documents/data_intensive/book/proposal.rmd",
@@ -583,7 +591,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -591,15 +599,15 @@
 					"file": "warwick.rmd",
 					"settings":
 					{
-						"buffer_size": 21556,
+						"buffer_size": 28027,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20850,
-								20850
+								16505,
+								16505
 							]
 						],
 						"settings":
@@ -608,7 +616,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5843.0,
+						"translation.y": 4095.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -779,15 +787,15 @@
 					"file": "references/refs.bib",
 					"settings":
 					{
-						"buffer_size": 4439,
+						"buffer_size": 4826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3952,
-								3952
+								4449,
+								4449
 							]
 						],
 						"settings":
@@ -796,7 +804,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1269.0,
+						"translation.y": 1649.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -875,7 +883,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 338.0,
 	"status_bar_visible": true
 }

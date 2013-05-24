@@ -110,10 +110,36 @@ I want to present several vignettes that illustrate what people do when they hav
 	print(xtable(df[c(1:5, 105:111),]), include.rownames=FALSE, comment=FALSE)
 
 ```
+- While the data we have seen is wide, it is not necessarily very mixed or dirty. Mixed means that the types of data are varied. A mixed dataset includes numbers, categories, text, and so forth. Dirty data, as you can imagine, describes data lacks consistency, that might have holes in it or is somehow noisy.
 
 - The point here is that finding structure in data means working out which bits of data are related to which other bit. Typically a row of data in a dataset relates to one thing. The thing might be a person, an event, a sample, a place, but machine learning is rather indifferent to that. What matters is finding, amidst the many possible combinations of features or variables those combinations that carry some weight, that pattern the other data, or that stand out. 
 
-- While the data we have seen is wide, it is not necessarily very mixed or dirty. Mixed means that the types of data are varied. A mixed dataset includes numbers, categories, text, and so forth. Dirty data, as you can imagine, describes data lacks consistency, that might have holes in it or is somehow noisy.
+- Possible the simplest machine learning technique that illustrates this would be _k-nn_ or '_k_ nearest neighbours.' This technique is widely used to classify things. The animated vignette uses randomly generated values that belong to one of two classes, 'first class' or 'second class.' Class membership is assigned randomly. As in many machine learning problems, the data shown here comes from two sources. The algorithm uses 'training set' to learn something about how the two variables $x, y$ relate to class membership. When the algorithm encounters new cases -the so-called 'test dataset' - it calculates the distance between the $x, y$ values of the new case and all the points in the training set, selects the $k$ nearest neighbours, counts how many of the nearest neighbours belong to each of the classes, and then assigns the new case to the majority class. This is a very simple algorithm that performs classification remarkably well, without much statistical calculation or statistical modelling. It is really just putting like with like. The intuition here is that new events are best put together with those they lie near to. 
+
+```{r ml-animation, echo=TRUE, cache=TRUE, message=FALSE, warning=FALSE, comment=NA, size='smallsize', results='markup' } 
+	library(animation)
+	oopt = ani.options(interval = 2, nmax = ifelse(interactive(), 10, 2))
+	x = matrix(c(rnorm(80, mean = -1), rnorm(80, mean = 1)), ncol = 2, byrow = TRUE)
+	y = matrix(rnorm(20, mean = 0, sd = 1.2), ncol = 2)
+	knn.ani(train = x, test = y, cl = rep(c("first class", "second class"), each = 40), 
+	         k = 30)
+
+```
+In this algorithm, much hinges on how likeness is equated with neighourliness. Like many machine learning techniques, the algorithm places a kind of 'partial observer' in the data. In _knn_, the observer moves around from point to point in the test dataset. At each point, it can see who or what is closest, and it can count what kind of things are nearby.  From the standpoint of the partial observer, much however depends on how distance is understood. The metrics on which the example shown above rely are Euclidean. Effectively, it sees the data environment as Cartesian space, in which distances can be measured in terms of _x,y_ coordinates, using Pythagoras' theorem:
+
+>idx = rank(apply(train, 1, function(x) sqrt(sum((x - 
+            test[i, ])^2))), ties.method = "random") %in% seq(k)
+        vote = cl[idx]
+        res = c(res, factor(names(which.max(table(vote))), levels = levels(clf), 
+            labels = levels(clf)))'
+
+- While in some settings this makes sense, Euclidean space just doesn't work well for many kinds of data. In so-called categorical data, for instance, that describe what category or class things belong to (e.g. what species, what nationality, what gender), Euclidean measures of distance produce pretty meaningless results. Distance metrics have been invented to deal with these situations. Gower's distance, proposed in 1971 [@gower_general_1971], can take into account these kinds of data. Even if different data types can be included in the calculation of distance, distance has many different implications and entanglements. Geographic distance does not equate to cultural distance for instance. Physical proximity does not equate to emotional intimacy. There are many ways in which extended spaces or distances are folded and manifolded by other relations that do not directly appear in Euclidean metrics. 
+
+- A second complication with all machine learning algorithms classify things is their reliance on notions of class and belonging. As we saw, _knn_ classifies the world according to how many of the nearest neighbours belong to each of the two classes. There could be many more classes, but two are common, especially in biomedical research. What should we say about classification in the context of machine learning?
+- From the standpoint of STS, the pivotal function of classifiers is bring things together that don't fit very easily. The whole point of classification work is to makes things fit. This is why classification is a key part of infrastructures.  As Geoffrey Bowker and Susan Leigh Start wrote:
+
+> Working infrastructures contain multiple classification systems that are both invisible, in the senses above, and ubiquitous. The invisibility of infrastructure makes visualization or description difficult. ... Our infrastructural metaphors show how baffled we often are by these systems. They are like undergarments or tunnel dwellers. (Bowker & Star, 1999, 232)
+
 
 - text data and shaping the world
 	- James Lin, Twitter
