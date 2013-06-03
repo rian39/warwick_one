@@ -147,7 +147,7 @@
 			"file": "/home/mackenza/Documents/notes/WhiteheadModes.mdown",
 			"settings":
 			{
-				"buffer_size": 2618,
+				"buffer_size": 4209,
 				"line_ending": "Unix"
 			}
 		},
@@ -155,7 +155,7 @@
 			"file": "/home/mackenza/R/kittydar/kittydar/README.md",
 			"settings":
 			{
-				"buffer_size": 2620,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -606,8 +606,8 @@
 						"selection":
 						[
 							[
-								16505,
-								16505
+								11296,
+								11296
 							]
 						],
 						"settings":
@@ -616,7 +616,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4095.0,
+						"translation.y": 4599.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -626,15 +626,15 @@
 					"file": "/home/mackenza/Documents/notes/WhiteheadModes.mdown",
 					"settings":
 					{
-						"buffer_size": 2618,
+						"buffer_size": 4209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1398,
-								1398
+								2961,
+								2961
 							]
 						],
 						"settings":
@@ -642,7 +642,7 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 194.0,
+						"translation.y": 677.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -652,15 +652,15 @@
 					"file": "/home/mackenza/R/kittydar/kittydar/README.md",
 					"settings":
 					{
-						"buffer_size": 2620,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								98,
-								98
+								0,
+								0
 							]
 						],
 						"settings":
@@ -875,7 +875,7 @@
 		[
 			[
 				"",
-				"/home/mackenza/Documents/google_analytics_spet2012/google.sublime-project"
+				"/home/mackenza/Documents/reviews/current_reviews.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -883,7 +883,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 338.0,
 	"status_bar_visible": true
 }
