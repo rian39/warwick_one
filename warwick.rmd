@@ -28,15 +28,16 @@ This paper explores  ways of thinking about digital data that lie somewhere betw
 
 ### if you had all the data, what then?
 
-I want to present several vignettes that illustrate what people do when they have all the data. They nearly always do what is variously called data mining, knowledge discovery or currently, _machine learning_. These terms reflect different scientific, govermental and commercial interests in data. Formally, they are linked by the idea that they are *finding an approximation to the function that generated the data.* Nearly all of the models and techniques used, whether it is clustering, linear modelling, neural networks, support vector machines, random forests, topic modelling, etc., etc., can be seen as attempts to find the function that generated the data.
-
+I want to present several vignettes that illustrate what people do when they have all the data. They nearly always do what is variously called data mining, knowledge discovery or currently, _machine learning_. These terms reflect different scientific, govermental and commercial interests in data. Formally, they are linked by the idea that they are *finding an approximation to the function that generated the data.* Nearly all of the models and techniques used, whether it is clustering, linear modelling, neural networks, support vector machines, random forests, topic modelling, etc., etc., can be seen as attempts to find the function that generated the data. Alternately, the variety of techniques are framed in terms of 'pattern recognition,' a term that stems from artificial intelligence and computer science. 
 
 #### infrastructural re-dimensioning
+
+One thing that people do when they have all the data is build huge data structures and data processing infrastructures. 
 
 - cancer genomes + google compute
 
 - begin with someone/something that does have all the data -- Google and certain genomic scientists work together on cancer genomes;
-- Let me illustrate what I mean by infrastructural re-dimensioning:
+- Let me illustrate what I mean by *infrastructural re-dimensioning*:
 
 > [Google Compute Engine + Institute of Systems Biology, June 2012](http://www.youtube.com/watch?v=3igX-ebL-PY)
 
@@ -50,6 +51,8 @@ I want to present several vignettes that illustrate what people do when they hav
 - On the one hand, the scientists at ISB have the data. They are somewhat like us -- they are academics. They are different to us in that they have the best data possible on cancer genomes. Their data reaches down into clinics, it comes from the best scientific instruments money can buy, and they benefit from PhDs, programmers, engineers, disk drives and an assortment of other services at their beck and call.  
 - Yet, they need or want google. Or maybe Google wants them for something. What the Google I/O conference shows is the availability of flexible instrastructure that can be quickly, rapidly made available on demand. It can shift orders of magnitude in size in seconds. Not many infrastructures can do that. But even if it can, why are such infrastructures needed? It is as if Oxford St in London could suddenly switch between a pedestrian mall and an 8 lane motorway. What form of life or sociality would require that mutability?
 - in this case, what the scientists want to do is to sift through massive numbers of associations between different parts of a genome to identify patterns and processes associated with mutagenesis. The algorithm they use is called [RF-ACE](https://code.google.com/p/rf-ace/), and an implementation in the R statistical programming language is freely available. While it is state-of-the-art, this algorithm is a typical machine learning algorithm. It is an example of unsupervised learning algorithm that tries to *find structure* in a data-set without any prior knowledge about the data. 
+
+
 
 #### data is wide, dirty and mixed: 3 million features
 
@@ -138,7 +141,8 @@ In this algorithm, much hinges on how likeness is equated with neighourliness. L
 - A second complication with all machine learning algorithms classify things is their reliance on notions of class and belonging. As we saw, _knn_ classifies the world according to how many of the nearest neighbours belong to each of the two classes. There could be many more classes, but two are common, especially in biomedical research. What should we say about classification in the context of machine learning?
 - From the standpoint of STS, the pivotal function of classifiers is bring things together that don't fit very easily. The whole point of classification work is to makes things fit. This is why classification is a key part of infrastructures.  As Geoffrey Bowker and Susan Leigh Start wrote:
 
-> Working infrastructures contain multiple classification systems that are both invisible, in the senses above, and ubiquitous. The invisibility of infrastructure makes visualization or description difficult. ... Our infrastructural metaphors show how baffled we often are by these systems. They are like undergarments or tunnel dwellers. (Bowker & Star, 1999, 232)
+> Working infrastructures contain multiple classification systems that are both invisible, in the senses above, and ubiquitous. The invisibility of infrastructure makes visualization or description difficult. ... Our infrastructural metaphors show how baffled we often are by these systems. They are like undergarments or tunnel dwellers. (Bowker & Star, 1999, 232) [TBA - this is not quite the right quote]
+
 
 
 - text data and shaping the world
@@ -148,8 +152,9 @@ In this algorithm, much hinges on how likeness is equated with neighourliness. L
 
 - signals -- image and sound
 	- driverless car - Thrum - winner of the Darpa challenge
-	- kittydar: : [kittydar](https://github.com/harthur/kittydar) vs. google cat
+	- kittydar: : [kittydar](http://harthur.github.io/kittydar/) vs. google cat
 	- Eulerian video
+		- how bodies encounter data
 
 #### machine learning as interdisciplinary method
 
@@ -162,7 +167,7 @@ A couple of observations about these vignettes:
 
 - Thirdly, if fluxing data dimensionality becomes navigable through machine learning, it becomes important to ask the usual kinds of science studies questions such as navigable or explorable at what cost. 
 
-##  The fluxing dimensionality of people
+## The fluxing dimensionality of people
 
  - So while I haven't yet talked about machine learning actually locates structure in data, I want to now turn to talking about people, companies and scientists doing machine learning. Who today does machine learning and at what cost? 
 
@@ -183,23 +188,26 @@ A couple of observations about these vignettes:
 		- 'what is cool is that this is all running on the client side. 'A few years ago this would not have been possible' (00:17:30); 
 		- Programmer's become better programmers via machine learning; at the same time, code in all settings becomes more powerful; 'all this is running on the client side' means that the machine learning algorithms (in the case of Kittydar, neural network algorithms) are much more widely distributed. They are not staying just in  the server farms, the data centres such as Google Compute. Machine learning gets into 'the clients.' 
 	- We could also look at cases such as the Obama re-election data team
-	- 
+- While the study of recent Stanford or MIT Phds, or for that matter, the winners of machine learning competitions might not seem to be that promising as a way to respond to the complexities of machine learning techniques, it offers some really valuable short cuts for the reinvention of methods. 
+	- Although machine learning models are often work as hidden layers in infrastructure, or they remain difficult to interpret precisely because they have been produced by machines, the people who learn to do machine learning are themselves less opaque. It is possible to track the kind of modelling work they do, and to impute method-technique signatures to their approach to data. People tend to keep using the same techniques they have used in the past. They invest so heavily in becoming expert in these techniques, it seems that they do not radically change course as they move between industry and academia and vice versa. So while the actual machine learning technique used in a given setting may not be obvious or openly stated, it is possible to impute techniques given then the biographical trajectory of the people involved. In certain cases, the prominence of machine learning experts or data scientists works against the obfuscation of their own methods. 
+		- the example of [Jimmy Lin](http://www.umiacs.umd.edu/~jimmylin/publications/index.html) - his publications on 'question answering' since 2001 give a reasonably good guide to the approach Twitter is likely to be using as it shapes responses to queries. 
+	- The optimism of many of the people about data, and in particular, what I like to call their 'optimism about optimisation' takes them close to the servers (in business, government, science, finance, etc.), but at the same time is subject to its own forms of recursive erosion. When Heather Arthur says 'machine learning algorithms are better programmers that you,' she is pointing towards the horizon of machine learning in general, which is self-optimising optimisation in which programmers and data scientists' own agency is much diminished. If at the moment, these are the wonderful people, will they be the wonderful people in 10-20 years? Or will they have automated their own work out of existence? 
 
-- the social scientists
-	- Gary King
-	- manovich -- cultural analytics
-	- Savage - descriptive assemblage
 
 ## What to do
 
 -  Three observations then about the significance of machine learning:
 	-  its ubiquity in science, business and government renders it a key contemporary control practice, that differs in powerful yet subtle ways from existing ways of knowing, predicting, anticipating or controlling
 	- its mobility as a cluster of methods has strongly performative effects -- parts of the world are heavily re-configured through it
-	- the mobility of its methods has no clear boundaries. The spread of machine learning into social sciences and humanities has started. And much of our research already depends on it anyway (google search, etc). The question is how we move in relation to machine learning. 
+	- the mobility of its methods has no clear boundaries. The spread of machine learning into social sciences and humanities has started. And much of our research already depends on it anyway (google search, etc). The question is how we move in relation to machine learning:
+		- the social scientists
+		- Gary King
+		- manovich -- cultural analytics
+		- Savage - descriptive assemblage
 
-- Machine learning is a hard field to get into in some ways for social science and humanities researchers. There are lots of statistical, mathematical and infrastructural subleties to deal with. On the one hand, it is becoming enormously available and increasingly as Thrift would say, part of the contemporary time-space signature. Myriad mundane examples could be given. On the other hand, to get into it, to occupy the fluxing dimensionality of the data is  technically difficult, and conceptually challenging. It takes very significant investments in time and attention (for instance, going through 27 hours of Youtube lectures with lots of equations written on blackboards is not trivial). 
+- Machine learning is a hard field to get into in some ways for social science and humanities researchers. There are lots of statistical, mathematical and infrastructural subleties to deal with. On the one hand, it is becoming enormously available and increasingly as Thrift would say, part of the contemporary time-space signature. Myriad mundane examples could be given. On the other hand, to get into it, to occupy the fluxing dimensionality of the data is  technically difficult, and conceptually challenging and sometimes boring. It takes very significant investments in time and attention (for instance, going through 27 hours of Youtube lectures with lots of equations written on blackboards is not trivial). 
 
-- I am suggesting that getting into it analytically and practically by whatever might be worthwhile, at least for some people for several reasons:
+- But I am suggesting that getting into it analytically and practically by whatever might be worthwhile, at least for some people for several reasons:
 	1. It offers  a way of accompanying the fluxing dimensionality of data. In _Modes of Thought_, Alfred North Whitehead writes:
 
 		>Perhaps our knowledge is distorted unless we can comprehend its essential connection with happenings which involve spatial relationships of fifteen dimensions [@whitehead_modes_1958, 78]
@@ -209,7 +217,7 @@ A couple of observations about these vignettes:
 	2. Like all sciences and technologies, machine learning must contain zones of slippage, inconsistency or friction where things can happen. While it might not be us as researchers who occupy or can identify those zones most easily, in making sense of machine learning all the way down, and pointing to the structures, processes or relations at play, we help free up the possibilities of gaming the models. And actually, who else is going to do it? That is, machine learning provides a way to contest the asymmetrical distributions of agency admidst re-dimensioned infrastructures.  
 	3. To some extent, as researchers we are encountering a version of the quandary I posed at the outset: what happens if you have all the data? The question is how we are going to comprehend 15D happenings, especially when a good number of those dimensions are occluded from us.  A couple of scenarios occur to me here:
 
-		- using machine learning to impute what kind of machine learning is going on in a given setting - these could involve either labelling what techniques are likely being used, or actively experimenting with ways of perturbing the model (as for instance, the many machine learning-based attempts to do search engine optimizination do)
+		- using machine learning to impute what kind of machine learning is going on in a given setting - these could involve either labelling what techniques are likely being used, or actively experimenting with ways of perturbing the model (as for instance, the many machine learning-based attempts to do search engine optimizination do). 'Gaming the model' means figuring out how it is likely to work, and then using that to perturb it. 
 		- using machine learning techniques as a way of thinking about differences, movement, shape and change
 		- using machine learning
 	4. 
