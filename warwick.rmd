@@ -31,9 +31,11 @@ While they advocate a mixture of methods to describe the forest, they don't them
 A second possibility is that we could look for patterns in the trees, branches and paths. Andrew Abbott, whose work has received much more attention in the wake of [@savage_contemporary_2009], argued more than  that a decade ago  that we should adopt pattern-based approaches to working with data:
 	
 > If most things that could happen don’t happen, then we are far better  off trying first to find local patterns in data and only then looking for regularities among those patterns. Indeed, it is for this reason that cluster analysis and scaling, not regression, dominate big-money social science — market research — where the aim is to find, understand, and exploit strong local patterns.  For these are methods that seek clumps and partitions of data and make no attempt to write general transformations [@abbott_time_2001, 241]
+<<<<<<< HEAD
 
 So Abbott is advocating, effectively, building 'classifiers' for the data.  Pattern discovery or cluster analysis are effectively automated classification systems. Patterns, for instance, are spatio-temporal segmentations of the world, and thus support classification into categories (fits the pattern vs. does not fit the pattern). 
 - But there are some problems with Abbott's diagnosis. The first is an empirical one: 'big money social science' such as business analytics intimately and increasingly uses regression models (especially in the form of logistic regression models that classify). In any case, the practices of linear modelling have been heavily renovated, and proliferated in a number of different directions especially in the field of machine learning. So the contrast that Abbott sees between pattern-based approaches and linear model or regression-based approaches to data is not so empirically well-grounded. The largely North American social sciences that Abbott criticises for their linear modelling of social data may or may not continue in their practices (augmented by social network analysis and heavy doses of with Bayesian statistics). The broader point here is that the simple opposition between pattern or cluster-based approaches and linear models of reality does not sufficiently to my mind orient us to the shifts in data practice that have been happening in the last decade.
+
 
 There are problems in moving between these two different images of the forest of classification systems and the locally patterned fields of data. But it might not be too ambitious to try to see if the shifts in technique that Abbott proposes could help perform the descriptive task that Bowker and Star envisaged.  Ironically, growth in tree-based methods of classification, and the emergence of techniques such as random forests (Breiman, 2000) around the time Bowker and Star were writing suggest that interest in growing tree (that is, classification systems) has continued to be strong. 
 
@@ -191,15 +193,27 @@ In this algorithm, much hinges on how likeness is equated with neighbourliness. 
 The role of classification systems becomes much more obvious when we begin to examine the powerful presence of classification systems within machine learning. To give a less esoteric example of the work of classification as it is done in machine learning, we could look at [kittydar](http://harthur.github.io/kittydar/), a piece of cat detection software written by Heather Arthur, a software developer at Mozilla Foundation.  Kittydar is typical and unusual in certain respects. It is ususual in that Arthur works as a software developer on the Mozilla Firefox browser. Her machine learning work uses the Javascript programming language associated with web development, not with machine learning or computationally intensive applications. It is a typical machine learning application, albeit one with a quite restricted application domain -- detected of forward-facing cats in images. Image classification is a typical machine learning application. Whether it is face recognition, hand-writing recognition, or medical-image processing, pattern recognition in images or 'machine vision' is a topic of long-standing interest. Like many machine learning applications, kittydar uses 'supervised learning' techniques. In supervised learning, the algorithm is 'trained' on a set of labelled examples, and then tested against unlabelled images by asking it to label them. Kittydar implements two of the most powerful supervised learning techniques -- neural networks and support vector machines -- to locate areas of images likely to contain a cat's face.
 
 > Kittydar first chops the image up into many "windows" to test for the presence of a cat head. For each window, kittydar first extracts more tractable data from the image's data. Namely, it computes the [Histogram of Orient Gradients](http://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) descriptor of the image, using the [hog-descriptor](http://github.com/harthur/hog-descriptor) library. This data describes the directions of the edges in the image (where the image changes from light to dark and vice versa) and what strength they are. This data is a vector of numbers that is then fed into a [neural network](https://github.com/harthur/brain) which gives a number from `0` to `1` on how likely the histogram data represents a cat. The neural network (the JSON of which is located in this repo) has been pre-trained with thousands of photos of cat heads and their histograms, as well as thousands of non-cats.
+<<<<<<< HEAD
+
+As Bowker and Star wrote: 
+=======
 
 As Bowker and Star wrote: 
 
 >The sheer density of the collisions of classification schemes in our lives calls for a new kind of science, a new set of metaphors, linking traditional social science and computer and information science. We need a topography of things such as the distribution of ambiguity.  ...  It will also use the best of object-oriented programming and other areas of computer science to describe this territory. [@bowker_sorting_1999, 31]
 
+>>>>>>> 163172a2b5756e51e262e783b9df45ee74b89fbb
+
+>The sheer density of the collisions of classification schemes in our lives calls for a new kind of science, a new set of metaphors, linking traditional social science and computer and information science. We need a topography of things such as the distribution of ambiguity.  ...  It will also use the best of object-oriented programming and other areas of computer science to describe this territory. [@bowker_sorting_1999, 31]
 
 
+
+<<<<<<< HEAD
 
 ## machine learning as interdisciplinary method
+=======
+### machine learning as interdisciplinary method
+>>>>>>> 163172a2b5756e51e262e783b9df45ee74b89fbb
 
 A couple of observations about these vignettes:
 
