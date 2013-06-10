@@ -1,0 +1,238 @@
+# In the data: interdisciplinary modes of machine learning
+
+
+Adrian Mackenzie
+
+Sociology Department, Lancaster University
+
+a.mackenzie@lancaster.ac.uk
+
+---------------------------
+
+Perhaps our knowledge is distorted unless we can comprehend its essential connection with happenings which involve spatial relationships of fifteen dimensions (A.N. Whitehead, *Modes of Thought*, 78)
+
+
+Imagine you are walking through a forest of interarticulated branches. Some are covered with ice or snow, and the suns melts their touching tips to reveal space between. Some are so thickly brambled they seem solid; others are oddly angular in nature, like esplanaded trees.  Some of the trees are wild, some have been cultivated ... Helicopters flying overhead can quickly tell your many types of each, even each leaf, there are in the world, but they cannot yet give you a guidebook for bird-watching or forestry conservation. There is a lot of underbrush and a complex ecology of soil bacteria, flora and fauna.  ... Now imagine that the forest is a huge information space and each of the trees and bushes are classification systems.  ... Your job is to describe this forest. [@bowker_sorting_1999,31-32]
+
+----------------------------------------
+
+* Edward Snowdon, GCHQ, NSA, Tesco ClubCard, dunnhumby, Beyond Analysis, Amazon, Facebook, Walmart, ...
+* Trevor Hastie, Rob Tibshirani, Jerome Friedman, Andrew Ng, Toby Segharan, Hilary Mason, Rachel Schutt,  Heather Arthur  ...
+* Linear regression model, decision tree, Random Forest (TM), *k*-nearest neighbours, neural network, support vector machine ...
+
+-----------------------------------------------
+
+"If most things that could happen don't happen, then we are far better  off trying first to find local patterns in data and only then looking for regularities among those patterns. Indeed, it is for this reason that cluster analysis and scaling, not regression, dominate big-money social science -- market research -- where the aim is to find, understand, and exploit strong local patterns.  For these are methods that seek clumps and partitions of data and make no attempt to write general transformations" [@abbott_time_2001, 241]
+
+
+"The sheer density of the collisions of classification schemes in our lives calls for a new kind of science, a new set of metaphors, linking traditional social science and computer and information science. We need a topography of things such as the distribution of ambiguity.  ...  It will also use the best of object-oriented programming and other areas of computer science to describe this territory" [@bowker_sorting_1999, 31].
+
+----------------------------------
+
+## Key argument about *machine learning* based on 2 word plays:
+
+1. people *vectorize* techniques  - to carry (vector); to flatten a matrix
+```{r echo=TRUE} 
+rectangular_matrix = matrix(seq(1:30), ncol=6)
+rectangular_matrix
+as.vector(rectangular_matrix)
+```
+2. techniques *optimize* people - 'make better'; engender optimism
+
+--------------------------------------------
+
+## People vectorize techniques
+
+* [Hastie, Tibshirani & Friedman](figure/hastie.jpg), ~ 17,000 citations, #3 best seller on Amazon 'data-mining', and 'machine learning' sales lists
+* Andrew Ng (Coursera co-founder), CS229 'Machine Learning' course at Stanford University, ~500,000 views since 2008
+* Toby Segharan, [*Programming Collective Intelligence*](figure/segaran.jpg) (2007),  #1 best seller on Amazon 'machine learning' sales list
+* [Hilary Mason at Bacon](http://www.hilarymason.com/presentations-2/devs-love-bacon-everything-you-need-to-know-about-machine-learning-in-30-minutes-or-less/) 
+* [Cath O'Neill & Rachel Schutt from Johnson Research Labs](http://columbiadatascience.com/blog/)
+*  Heather Arthur, ['essentially machine learning algorithms are better programmers than you'](http://www.youtube.com/watch?v=uZqXc1E91mE&feature=youtu.be); 00:03:35
+
+------------------------------------------
+
+## Techniques optimize people
+
+### classic dataset: 'iris' R.A. Fisher (1936)
+
+```{r iris, echo=FALSE, message=FALSE, results='asis'} 
+
+    library(xtable)
+    
+    #R.A Fisher's 1936 'iris' dataset
+    data(iris)
+    ncol(iris)
+    print(xtable(iris[1:5,]), comment=FALSE, type='html')
+
+
+### finding patterns in iris: decision trees
+
+```{r iris_tree, echo=TRUE, cache=TRUE, message=FALSE, warning=FALSE, comment=NA, size='smallsize', results='asis' } 
+
+    data(iris)
+
+
+    library(rpart)
+    rpart(Species ~ ., iris)
+    ir.rp =rpart(Species ~ ., iris)
+    ir.rp
+
+    par(mfrow = c(1,2), xpd=NA)
+    plot(ir.rp, main = 'tree recursive partitioning of iris')
+    text(ir.rp, cex=0.8, use.n=TRUE)
+    table(iris$Species) # is data.frame with 'Species' factor
+     iS <- iris$Species == "setosa"
+     iV <- iris$Species == "versicolor"
+     op <- par(bg = "bisque")
+     matplot(c(1, 8), c(0, 4.5), type =  "n", xlab = "Length", ylab = "Width",
+             main = "Petal and Sepal Dimensions in Iris Blossoms")
+     matpoints(iris[iS,c(1,3)], iris[iS,c(2,4)], pch = "sS", col = c(2,4))
+     matpoints(iris[iV,c(1,3)], iris[iV,c(2,4)], pch = "vV", col = c(2,4))
+     legend(1, 4, c("    Setosa Petals", "    Setosa Sepals",
+                    "Versicolor Petals", "Versicolor Sepals"),
+            pch = "sSvV", col = rep(c(2,4), 2))
+
+```
+"Of all the well-known learning methods, decision trees comes closest to meeting the requirements for serving as an off-the-shelf procedure for data-mining" [@hastie_elements_2009, 352]
+
+----------------------------------------
+
+### Building high-dimensional classifiers
+
+#### Golub's blood pressure dataset, 1999
+
+Many more dimensions (columns) in the data 
+
+```{r golub, echo=FALSE, results='asis'} 
+
+    bp <-read.csv('data/BPdata.txt', sep=' ')
+    cat ('columns in Golub dataset:', ncol(bp), '\n\n')
+    print(xtable(bp[1:5,]), comment=FALSE, rotate.colnames=TRUE, type='html')
+
+```
+- the Golub blood pressure data from 1999 has over 100 columns rather than 5. This is not especially wide, but radically changes the structures that might be found in the data. 
+
+```{r name, echo=FALSE, cache=TRUE, message=FALSE, warning=FALSE, comment=NA, size='smallsize', results='markup' } 
+    
+    df <- sapply(1:100, choose, n=100)
+    plot(df,xlab ='number of variables in the model', ylab = 'number of models')
+
+```
+
+#### Infrastructural re-dimensioning: RF-ACE
+
+For hundreds of thousands or millions of dimensional data?
+
+[Google Compute Engine + Institute of Systems Biology, June 2012](http://www.youtube.com/watch?v=3igX-ebL-PY)
+
+> The world's 3rd largest supercomputer *learns associations* between genomic features' [@anthony_google_2012]
+
+[RF-ACE; Random Forest- Artificial Contrasts with Ensembles](https://code.google.com/p/rf-ace/)
+
+Urs Hölzle, Senior Vice President of Infrastructure at Google 'then went even further and scaled the application to run on 600,000 cores across Google’s global data centers' [@google_inc_behind_2012]. 
+
+---------------------------------------
+
+### Partial observers and dimensional explosion
+
+Ways of moving through high-dimensional spaces:
+
+#### A: Stay very local?
+
+*k-nn*: *k*-nearest neighbours
+
+
+```{r ml-animation, echo=TRUE, cache=TRUE, message=FALSE, warning=FALSE, comment=NA, size='smallsize', results='markup' } 
+    library(animation)
+    oopt = ani.options(interval = 2, nmax = ifelse(interactive(), 10, 2))
+    x = matrix(c(rnorm(80, mean = -1), rnorm(80, mean = 1)), ncol = 2, byrow = TRUE)
+    y = matrix(rnorm(20, mean = 0, sd = 1.2), ncol = 2)
+    knn.ani(train = x, test = y, cl = rep(c("first class", "second class"), each = 40), 
+             k = 30)
+```
+
+#### B: Optimize a 'loss' function (a.k.a 'cost function') that 'weights' some dimensions
+
+
+[kittydar](http://harthur.github.io/kittydar/): neural network cat face classifier
+
+```{r gradient_desc, echo=FALSE, cache=TRUE, message=FALSE, warning=FALSE, comment=NA} 
+    
+    library(animation)
+
+    grad_desc <- function (FUN = function(x, y) 2 *cos(y^2) + 30*sin(x), rg = c(-3, -3, 
+        3, 3), init = c(-3, 3), gamma = 0.05, tol = 0.001, gr = NULL, 
+        len = 50, interact = FALSE, col.contour = "red", col.arrow = "blue", 
+        main) 
+    {
+        nmax = ani.options("nmax")
+        x = seq(rg[1], rg[3], length = len)
+        y = seq(rg[2], rg[4], length = len)
+        nms = names(formals(FUN))
+        grad = if (is.null(gr)) {
+            deriv(as.expression(body(FUN)), nms, function.arg = TRUE)
+        }
+        else {
+            function(...) {
+                res = FUN(...)
+                attr(res, "gradient") = matrix(gr(...), nrow = 1, 
+                    ncol = 2)
+                res
+            }
+        }
+        z = outer(x, y, FUN)
+        xy = if (interact) {
+            contour(x, y, z, col = "red", xlab = nms[1], ylab = nms[2], 
+                main = "Choose initial values by clicking on the graph")
+            unlist(locator(1))
+        }
+        else init
+        newxy = xy - gamma * attr(grad(xy[1], xy[2]), "gradient")
+        gap = abs(FUN(newxy[1], newxy[2]) - FUN(xy[1], xy[2]))
+        if (missing(main)) 
+            main = eval(substitute(expression(z == x), list(x = body(FUN))))
+        i = 1
+        while (gap > tol && i <= nmax) {
+            dev.hold()
+            contour(x, y, z, col = col.contour, xlab = nms[1], ylab = nms[2], 
+                main = main)
+            xy = rbind(xy, newxy[i, ])
+            newxy = rbind(newxy, xy[i + 1, ] - gamma * attr(grad(xy[i + 
+                1, 1], xy[i + 1, 2]), "gradient"))
+            arrows(xy[1:i, 1], xy[1:i, 2], newxy[1:i, 1], newxy[1:i, 
+                2], length = par("din")[1]/50, col = col.arrow)
+            gap = abs(FUN(newxy[i + 1, 1], newxy[i + 1, 2]) - FUN(xy[i + 
+                1, 1], xy[i + 1, 2]))
+            ani.pause()
+            i = i + 1
+            if (i > nmax) 
+                warning("Maximum number of iterations reached!")
+        }
+        invisible(list(par = newxy[i - 1, ], value = FUN(newxy[i - 
+            1, 1], newxy[i - 1, 2]), iter = i - 1, gradient = grad, 
+            persp = function(...) persp(x, y, z, ...)))
+    }
+   grad_desc()
+
+
+```
+
+Weights of nodes in neural network: optimize a loss function using gradient descent
+
+----------------------------------------------
+## Machine learning as 'cruel optimisation' or 'repetition of originary subordination'?
+
+Unstable circuits of vectorization and optimisation
+
+Whitehead: machine learning doesn't eschew pluri-dimensionality
+
+
+Bowker & Star: can  'new kind of science' of 'distribution of ambiguity' acknowledge machine learning already in us?
+
+The terms by which we are hailed are rarely the ones we choose (and even when we try to impose protocols on how we are to be named, they usually fail); but these terms we never really choose are the occasion for something we might still call agency, the repetition of an originary subordination for another purpose, one whose future is partially open. (Judith Butler, _Excitable Speech_, 1997, 38)
+
+Cruel optimism is the condition of maintaining an attachment to a problematic object in advance of its loss. ... One makes affective bargains about the costliness of one’s attachments, usually unconscious ones, most of which keep one in proximity to the scene of desire/attrition (Lauren Berlant, _Cruel Optimism_, 2007, 21) 
+
+
+

@@ -139,8 +139,26 @@
 			"file": "warwick.rmd",
 			"settings":
 			{
-				"buffer_size": 28027,
+				"buffer_size": 48316,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "warwick_presentation.rmd",
+			"settings":
+			{
+				"buffer_size": 11268,
+				"line_ending": "Unix",
+				"name": "# Learning techniques"
+			}
+		},
+		{
+			"file": "build_presentation.sh",
+			"settings":
+			{
+				"buffer_size": 140,
+				"line_ending": "Unix",
+				"name": "#!/bin/sh"
 			}
 		},
 		{
@@ -152,11 +170,12 @@
 			}
 		},
 		{
-			"file": "/home/mackenza/R/kittydar/kittydar/README.md",
+			"file": "/home/mackenza/Documents/notes/bowker-star-sorting_things.md",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
+				"buffer_size": 6075,
+				"line_ending": "Unix",
+				"name": "# Bowker, Geoffrey C. & Star, Susan Leigh Sorting"
 			}
 		},
 		{
@@ -176,27 +195,34 @@
 			}
 		},
 		{
-			"file": "build.sh",
+			"file": "references/refs.bib",
 			"settings":
 			{
-				"buffer_size": 184,
-				"line_ending": "Unix",
-				"name": "#!/bin/sh"
-			}
-		},
-		{
-			"file": "template.latex",
-			"settings":
-			{
-				"buffer_size": 3370,
+				"buffer_size": 8146,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "references/refs.bib",
+			"file": "references/Exported Items.bib",
 			"settings":
 			{
-				"buffer_size": 4826,
+				"buffer_size": 518,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "knit_presentation.sh",
+			"settings":
+			{
+				"buffer_size": 69,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "warwick_presentation.md",
+			"settings":
+			{
+				"buffer_size": 31323,
 				"line_ending": "Unix"
 			}
 		}
@@ -208,12 +234,20 @@
 		"selected_items":
 		[
 			[
-				"set R",
-				"Set Syntax: R"
-			],
-			[
 				"set ",
 				"Set Syntax: Markdown"
+			],
+			[
+				"set mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"set ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"set R",
+				"Set Syntax: R"
 			],
 			[
 				"set am",
@@ -258,10 +292,6 @@
 			[
 				"pack",
 				"Package Control: Install Package"
-			],
-			[
-				"set mar",
-				"Set Syntax: Markdown"
 			],
 			[
 				"mark",
@@ -341,8 +371,16 @@
 	},
 	"file_history":
 	[
-		"/home/mackenza/Documents/data_intensive/warwick_june2013/references/Exported Items.bib",
+		"/home/mackenza/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/mackenza/Documents/data_intensive/post_genome_book_stevens_etc_2012/genome_topology_mar2013.rmd",
 		"/home/mackenza/R/animations/grad_desc.R",
+		"/home/mackenza/Documents/data_intensive/warwick_june2013/warwick.rmd",
+		"/home/mackenza/R/computer_visio/webcam-pulse-detector-master/test_webcam.py",
+		"/home/mackenza/Documents/data_intensive/warwick_june2013/template.latex",
+		"/home/mackenza/R/kittydar/kittydar/README.md",
+		"/home/mackenza/Dropbox/cmr/Scientific intimacies paper.txt",
+		"/home/mackenza/Documents/notes/bowker-star-sorting-things.md",
+		"/home/mackenza/Documents/data_intensive/warwick_june2013/references/Exported Items.bib",
 		"/home/mackenza/R/kittydar/classifiers/mixed-svm-1000.json",
 		"/home/mackenza/.config/ipython/README",
 		"/home/mackenza/.config/ipython/profile_abm/ipython_notebook_config.py",
@@ -351,7 +389,6 @@
 		"/home/mackenza/Documents/data_intensive/book/proposal.rmd",
 		"/home/mackenza/bank.txt",
 		"/home/mackenza/R/kittydar/kittydar/browser.js",
-		"/home/mackenza/R/kittydar/kittydar/README.md",
 		"/home/mackenza/R/kittydar/kittydar/training/README.md",
 		"/home/mackenza/R/kittydar/kittydar/kittydar.js",
 		"/home/mackenza/R/kittydar/kittydar/utils.js",
@@ -422,7 +459,6 @@
 		"/home/mackenza/Dropbox/data-economy/ngs_paper/template.latex",
 		"/home/mackenza/Dropbox/data-economy/ngs_paper/latex.template",
 		"/home/mackenza/Dropbox/data-economy/ngs_paper/pandoc_format_paper.sh",
-		"/home/mackenza/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/mackenza/.config/sublime-text-2/Packages/User/Markdown.sublime-settings",
 		"/home/mackenza/R/ngs/eagle_analysis.R",
 		"/home/mackenza/.config/sublime-text-2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
@@ -462,8 +498,7 @@
 		"/home/mackenza/Desktop/test6.rmd",
 		"/home/mackenza/R/ngs/data/geo_schema.sql",
 		"/home/mackenza/Desktop/test.sublime-project",
-		"/media/0031-014A/Documents/supervision/xaroula/chapter 2 attempt.doc",
-		"/home/mackenza/Desktop/scrivener-manual-a4.pdf"
+		"/media/0031-014A/Documents/supervision/xaroula/chapter 2 attempt.doc"
 	],
 	"find":
 	{
@@ -478,9 +513,15 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"html5",
+			"hastie",
+			"The sheer density of the collisions",
+			"hastie",
+			"tr",
+			"tree",
 			"savage_contemporary_2009",
 			"abbott",
 			"pa",
@@ -576,7 +617,7 @@
 		],
 		"highlight": true,
 		"in_selection": false,
-		"preserve_case": false,
+		"preserve_case": true,
 		"regex": false,
 		"replace_history":
 		[
@@ -591,7 +632,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -599,30 +640,84 @@
 					"file": "warwick.rmd",
 					"settings":
 					{
-						"buffer_size": 28027,
+						"buffer_size": 48316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11296,
-								11296
+								31787,
+								31787
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4599.0,
+						"translation.y": 8880.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "warwick_presentation.rmd",
+					"settings":
+					{
+						"buffer_size": 11268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1297,
+								1297
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# Learning techniques",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 338.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "build_presentation.sh",
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#!/bin/sh",
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "/home/mackenza/Documents/notes/WhiteheadModes.mdown",
 					"settings":
 					{
@@ -648,33 +743,34 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/home/mackenza/R/kittydar/kittydar/README.md",
+					"buffer": 4,
+					"file": "/home/mackenza/Documents/notes/bowker-star-sorting_things.md",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 6075,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								4989,
+								4989
 							]
 						],
 						"settings":
 						{
+							"auto_name": "# Bowker, Geoffrey C. & Star, Susan Leigh Sorting",
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 845.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "/home/mackenza/Documents/notes/abbott_time_matters.md.txt",
 					"settings":
 					{
@@ -700,7 +796,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "/home/mackenza/Documents/data_intensive/lse_cambridge_markets_algorithms/markets_algorithms.Rmd",
 					"settings":
 					{
@@ -711,8 +807,8 @@
 						"selection":
 						[
 							[
-								1520,
-								1520
+								600,
+								600
 							]
 						],
 						"settings":
@@ -721,63 +817,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 803.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "build.sh",
-					"settings":
-					{
-						"buffer_size": 184,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								104
-							]
-						],
-						"settings":
-						{
-							"auto_name": "#!/bin/sh",
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "template.latex",
-					"settings":
-					{
-						"buffer_size": 3370,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								335,
-								335
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 171.0,
+						"translation.y": 173.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -787,15 +827,19 @@
 					"file": "references/refs.bib",
 					"settings":
 					{
-						"buffer_size": 4826,
+						"buffer_size": 8146,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4449,
-								4449
+								5610,
+								5610
+							],
+							[
+								7638,
+								7638
 							]
 						],
 						"settings":
@@ -804,7 +848,88 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1649.0,
+						"translation.y": 2528.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "references/Exported Items.bib",
+					"settings":
+					{
+						"buffer_size": 518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								518,
+								518
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "knit_presentation.sh",
+					"settings":
+					{
+						"buffer_size": 69,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "warwick_presentation.md",
+					"settings":
+					{
+						"buffer_size": 31323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1953,
+								1953
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 376.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -883,7 +1008,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 338.0,
 	"status_bar_visible": true
 }
